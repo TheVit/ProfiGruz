@@ -1,0 +1,262 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+  function ScrollTo(name) {
+    ScrollToResolver(document.getElementById(name));
+  }
+
+  function ScrollToResolver(elem) {
+    var jump = parseInt(elem.getBoundingClientRect().top * .4);
+    document.body.scrollTop += jump;
+    document.documentElement.scrollTop += jump;
+    if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
+      elem.lastjump = Math.abs(jump);
+      setTimeout(function() { ScrollToResolver(elem);}, "100");
+    } else {
+      elem.lastjump = null;
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="hero">
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-light navbar-toggleable-sm text-white">
+            <!-- <img src="./src/travel_car_logo.png" style="height: 55px; padding: 3px"> -->
+            ProfiGryz
+            <button class="navbar-toggler navbar-toggler-right text-white" type="button" data-toggle="collapse" data-target="#headerNav"
+            aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="headerNav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button class="btn nav-btn" onclick="ScrollTo('sec-prem')" >Примущества</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn nav-btn" onclick="ScrollTo('sec-price')" >Стоимость</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn nav-btn" onclick="ScrollTo('sec-contact')" >Контакты</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="row justify-content-center">
+          <div class="col justify-content-center">
+            <div class="white text-center">
+              <h1>Услуги грузчиков</h1>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-center color-white">
+          <div class="col">
+            <br><br><br><br>
+            <div class="services">
+              <h3>
+                <p>Грузчики 50грн/час</p>
+                <br>
+                <p>+38 (050) 621 83 28</p>
+                <p>+38 (068) 194 88 43</p>
+                <p>igroman1003@gmail.com</p>
+              </h3>
+            </div>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec-prem" name="sec-features" class="sec-features">
+      <div class="green-panel" style="padding-top: 15px; padding-bottom: 15px;">
+        <h3 class="text-center">НАШИ ПРЕИМУЩЕСТВА</h3>
+        <div class="text-left text about-us green">
+          <p>В нашей кампании работают самые квалифицированные сотрудники.</p>
+          <p>Мы предлагаем услуги грузчиков в Харькове по доступным ценам.</p>
+          <p>С удовольствием возьмем на себя решение всех вопросов во время квартирного, офисного или промышленного переезда.</p>
+          <p>Выполним любые грузоперевозки.</p>
+          <p>Главным направлением деятельности кампании Профи Груз это организация всех видов перевозок в Харькове.</p>
+          <p>Наша кампания предоставляет следующие услуги:</p>
+          <p>Квартирный переезд</p>
+          <p>Офисный переезд</p>
+          <p>Промышленный переезд</p>
+          <p>Переезд банков</p>
+          <p>Услуги грузчиков, в том числе разгрузка фур</p>
+          <p>Вывоз строй мусора</p>
+          <p>Перевозка хрупких грузов</p>
+          <p>Перевозка больших габаритных грузов</p>
+          <p>Перевозка сейфов и банкоматов</p>
+          <p>В случае если вам нужно упаковать вещи, то следует обратиться к нам заранее.</p>
+          <p>Так как потребуются упаковочные материалы (скотч, пленка, картонные коробки, и др.)</p>
+          <p>Профессионально упакуем любые вещи. Наша компания располагает современными машинами и ответственными сотрудниками с опытом работы.</p>
+          <p>Наш большой автопарк позволит предоставить каждому клиенту необходимую машину.</p>
+          <p>А также услуги грузчиков для перевозки тяжелых габаритных грузов и предметов мебели.</p>
+        </div>
+      </div>
+      <div class="text-center" style="padding-top: 25px">
+        <p><b>Гарантия качества</b></p>
+      </div>
+      <br>
+      <div class="row justify-content-center" style="margin-top: 25px;margin-bottom: 25px;">
+
+        <div class="col text-center">
+          <p>
+            <img src="./src/kach1.png" alt="Кондиционер" height="75px">
+          </p>
+          <p>
+            <!-- <h5>100%</h5> -->
+          </p>
+        </div>
+        <div class="col text-center">
+          <p>
+            <img src="./src/kach2.jpg" alt="Обогрев салона" height="75px">
+          </p>
+          <p>
+            <!-- <h5>100%</h5> -->
+          </p>
+        </div>
+        <div class="col text-center">
+          <p>
+            <img src="./src/kach3.jpg" alt="Большой багажник" height="75px">
+          </p>
+          <p style="text-center">
+            <!-- <h5>Большой<br>палец</h5> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="padding-bottom: 25px">
+      <h1>! Быстро ! Качественно ! Ответственно ! Дружелюбно !</h1>
+    </div>
+  </section>
+
+  <section id="sec-price" name="sec-about" class="sec-about pt-5 pb-5">
+    <h3 class="text-center">Стоимость Услуг</h3>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="text-center">Грузчики разнорабочие</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Услуги	<br>
+          Грузчик (по-часово)<br>
+          Грузчик (человеко/день)<br>
+          Разгрузка/погрузка стройматериала<br>
+          мешок(20-30кг)<br>
+          мешок болеее 30 кг<br>
+          гипс/осб<br>
+          Разнорабочий<br>
+          Авто<br>
+          Грузовое авто (по-часово)<br>
+          Грузовое авто (км)<br>
+        </div>
+        <div class="col">
+          Cтоимость<br>
+          70 грн/час (минимум 2 часа)<br>
+          от 250 грн<br>
+          минимальный заказ 250 грн<br>
+          2 грн.этаж<br>
+          3 грн.этаж<br>
+          4 грн.этаж<br>
+          400 грн./день<br><br>
+
+          180 грн/час(минимум 2 часа)<br>
+          7 грн км.<br>
+        </div>
+      </div>
+      <br><br>
+      <div class="row justify-content-center">
+        <div class="text-center">Земельные работы</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Устройство бетонного фундамента(опалубка,армирование,бетонирование)<br>
+          Устройство опалубки<br>
+          Копка котлованов, траншей и т.д.(от 4х куб.)<br>
+          Устройство отмосток(армирование,опалубка,бетонирование)<br>
+          Перекопка земли<br>
+        </div>
+        <div class="col">
+          м.куб. 450 грн.<br>
+          пог.м. 50 грн.<br>
+          м.куб. 150 грн.<br>
+          м.кв. 150 грн.<br>
+          м.кв 20 грн.<br>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section id="sec-contact" name="sec-contact" class="sec-contact pt-5 pb-5">
+  <div class="container" style="padding: 45px">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-7">
+        <h1 class="h4">Оставьте свою заявку и мы Вам перезвоним</h1>
+        <form action="https://formspree.io/themaulmartin@gmail.com" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" name="Имя" placeholder="Ваше имя" id="name" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="Номер телефона" placeholder="Номер телефона" id="extra_phone_number" />
+          </div>
+          <div class="form-group">
+            <input type="email" hidden class="form-control" name="Обратный адрес" value="dont@reply.me" placeholder="Электронная почта" id="reply_to" />
+          </div>
+          <div class="form-group">
+            <textarea name="Сообщение" class="form-control" placeholder="Сообщение" rows="4"></textarea>
+          </div>
+          <input id="submit_form" class="btn btn-default" type="submit" value="Отправить" />
+        </form>
+        <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function (e) {
+          setTimeout(function () {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+          }, 1);
+        });
+        </script>
+      </div>
+    </div>
+  </div>
+  <div class="text-center important-sec">
+    Работаем круглосуточно и звонки принимаем в любое время.<br>
+    Звоните: +38 (050) 621 83 28 или +38 (068) 194 88 43
+  </div>
+</section>
+
+<section>
+  <img class="map" src="./src/map.png" alt="Map">
+</section>
+<footer class="text-center">
+  <p class="text-white footer-content">
+    <!-- <img class="ajg-logo" src="./src/AJG.jpg"/> -->
+    ArtJoker Group</p>
+  </footer>
+</body>
+
+</html>
