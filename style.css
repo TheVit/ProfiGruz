@@ -1,4 +1,10 @@
 /* !important - зло */
+
+html{
+  font-family: Helvetica;
+  font: Helvetica;
+}
+
 hr
 {
   margin-left: 0;
@@ -38,8 +44,6 @@ hr
   background: #005eb9 !important;
 }
 
-
-
 header
 {
   /*position: fixed;
@@ -69,7 +73,7 @@ header
 {
   color: white;
   overflow: hidden;
-  height: 200px;
+  height:100%;
   position: relative;
   /*background: rgba(0, 0, 0, 0);*/
   background: url(./src/background1.jpg) no-repeat bottom center/cover;
@@ -189,6 +193,7 @@ header
   color: #212121;
 }
 
+
 .carousel-control-next:focus, .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover
@@ -210,7 +215,7 @@ header
 
 footer
 {
-  height: 45px;
+  height: 125px;
   background-color: #00376C;
 }
 
@@ -384,17 +389,17 @@ img
 
 p
 {
-
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-
 }
 
 .services
 {
+  width: 300px;
+  margin: 25px;
   padding: 35px 35px 35px 35px;
-  background: #005eb9 0px;
-  border-radius: 0 5px 5px 0;
+  background: rgba(0, 94, 185, 0.6) 0px;
+  border-radius: 5px 5px;
 }
 
 .map
@@ -406,3 +411,80 @@ p
 {
   color: white !important;
 }
+
+.navbar
+{
+  left: 0;
+  border-bottom: solid #002242 2px;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(0, 94, 185, 0.7);
+  position: fixed !important;
+  z-index: 100;
+}
+
+.panel
+{
+  border-radius: 6px;
+  margin: 0;
+  margin-bottom: 25px;
+  width: 320px;
+  height: 300px;
+  background: #005eb9 0px;
+}
+
+.panel-img
+{
+  margin-bottom: 5px;
+  background: #005eb9;
+  width: 250px;
+  height: 165px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.panel-button
+{
+  padding: 6px;
+  height: 40px;
+  border-radius: 8px;
+  width: 200px;
+  margin:25px 60px 0 60px;
+  background-color: #002242;
+  color: white;
+  border: none;
+}
+
+.panel-button:hover
+{
+  border-radius: 8px;
+  color: #000000;
+  border: none;
+  background: #00b95b !important;
+  border-color: none;
+}
+
+div>a
+{
+  color: white !important;
+  text-decoration: none;
+}
+
+div>a:hover
+{
+  color: black !important;
+  text-decoration: none;
+}
+
+.panel-price
+{
+  color: white;
+  margin: 10px 5px 10px 5px;
+}
+
+.bottom-pos
+{
+  position: absolute;
+   bottom: 0;
+   left: 25px;
+ }
