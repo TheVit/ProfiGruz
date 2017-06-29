@@ -33,7 +33,7 @@ hr
 {
   color: #93CAFF;
   border: none;
-  background: #005eb9 !important;
+  background: #6c3500 !important;
   border-color: none;
 }
 
@@ -115,7 +115,7 @@ header
 
 .btn-lg:hover
 {
-  background: #005eb9 !important;
+  background: #6c3500 !important;
   color: #93CAFF;
   border: none;
 }
@@ -130,7 +130,7 @@ header
 
 .btn-default:hover
 {
-  background: #005eb9 !important;
+  background: #6c3500 !important;
   color: #93CAFF;
   border: none;
 }
@@ -143,7 +143,7 @@ header
 
 .btn-primary:hover
 {
-  background: #005eb9 !important;
+  background: #6c3500 !important;
   color: #93CAFF;
 }
 
@@ -179,7 +179,7 @@ header
 
 .carousel-indicators li:focus, .carousel-indicators li:hover
 {
-  background: rgba(33, 33, 33, 0.5);
+  background: #6c3500;
 }
 
 .carousel-indicators .active
@@ -280,7 +280,7 @@ img
 
 #submit_form:hover
 {
-  background-color: #005eb9 !important;
+  background-color: #6c3500 !important;
   color: white !important;
 }
 
@@ -312,7 +312,7 @@ img
 
 .dismiss_btn:hover
 {
-  background-color: #005eb9 !important;
+  background-color: #6c3500 !important;
   color: white !important;
   border: none;
 }
@@ -371,7 +371,7 @@ img
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-.nav-btn:hover
+  .nav-btn:hover
 {
   width: inherit+5px;
   height: inherit+5px;
@@ -462,7 +462,7 @@ p
   border-radius: 8px;
   color: #000000;
   border: none;
-  background: #00b95b !important;
+  background: #6c3500 !important;
   border-color: none;
 }
 
