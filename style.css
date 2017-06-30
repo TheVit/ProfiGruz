@@ -287,19 +287,19 @@ img
 .modal-body
 {
   color: white;
-  background-color: #00376C !important
+  background-color: #005eb9 !important
 }
 
 .modal-header
 {
   color: white;
-  background-color: #00376C !important
+  background-color: #005eb9 !important
 }
 
 .modal-footer
 {
   color: white;
-  background-color: #00376C !important
+  background-color: #005eb9 !important
 }
 
 .dismiss_btn
@@ -506,12 +506,25 @@ div>a:hover
 
 .prem-img
 {
-  height: 45px;
-  /*width: 100px;*/
+  height: 70px;
 }
 
 .contact-header
 {
   line-height: 1.5;
   text-align: center;
+}
+
+.contact-info
+{
+  line-height: 1.5;
+}
+
+.center
+{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  border-radius: 0 6px 6px 0;
 }

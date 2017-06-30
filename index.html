@@ -37,8 +37,8 @@
       <header>
         <div class="container">
           <nav class="navbar navbar-light navbar-toggleable-sm text-white">
-            <!-- <img src="./src/travel_car_logo.png" style="height: 55px; padding: 3px"> -->
-            ProfiGryz
+            <img src="./src/pg-logo.png" style="height: 55px; padding: 3px">
+
             <div class="col-1">
 
             </div>
@@ -57,10 +57,10 @@
                 <button class="btn nav-btn" onclick="ScrollTo('sec-prem')" >Услуги и цены</button>
               </li>
               <li class="nav-item">
-                <button class="btn nav-btn" onclick="ScrollTo('sec-price')" >Примущества</button>
+                <button class="btn nav-btn" onclick="ScrollTo('sec-price')" >Прeимущества</button>
               </li>
               <li class="nav-item">
-                <button class="btn nav-btn" onclick="ScrollTo('sec-contact')">Преимущества</button>
+                <button class="btn nav-btn" onclick="ScrollTo('sec-prc')">Стоимость</button>
               </li>
               <li class="nav-item">
                 <button class="btn nav-btn" onclick="ScrollTo('sec-contact')">Вакансии</button>
@@ -112,7 +112,7 @@
     </section>
 
 
-    <section id="sec-routes" name="sec-routes" class="sec-pricing">
+    <section id="sec-prem" name="sec-routes" class="sec-pricing">
       <div class="container text-center">
         <br>
         <div class="row">
@@ -131,7 +131,7 @@
         <br>
         <div class="row justify-content-center">
           <div class="col">
-            <div class="panel" sstyle="background: url(src/krog-mos.jpg);">
+            <div class="panel" sstyle="background: url(src/gru1.gif) no-repeat; background-size: cover">
               <!-- panel content -->
               <!-- <img class="panel-img" src="src/krog-mos.jpg" alt=""> -->
               <br>
@@ -159,7 +159,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="panel" sstyle="background: url(src/krog-mos.jpg);">
+            <div class="panel" sstyle="background: url(src/gru2.gif) no-repeat; background-size: cover">
               <!-- panel content -->
               <!-- <img class="panel-img" src="src/krog-mos.jpg" alt=""> -->
               <br>
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="panel" sstyle="background: url(src/krog-mos.jpg);">
+            <div class="panel" sstyle="background: url(src/gru3.gif) no-repeat; background-size: cover">
               <!-- panel content -->
               <!-- <img class="panel-img" src="src/krog-mos.jpg" alt=""> -->
               <br>
@@ -220,7 +220,7 @@
         <br>
         <div class="row justify-content-center">
           <div class="col">
-            <div class="panel" sstyle="background: url(src/krog-mos.jpg);">
+            <div class="panel" sstyle="background: url(src/gru4.gif) no-repeat; background-size: cover">
               <!-- panel content -->
               <!-- <img class="panel-img" src="src/krog-mos.jpg" alt=""> -->
               <br>
@@ -248,7 +248,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="panel" sstyle="background: url(src/krog-mos.jpg);">
+            <div class="panel" sstyle="background: url(src/gru5.gif)) no-repeat; background-size: cover">
               <!-- panel content -->
               <!-- <img class="panel-img" src="src/krog-mos.jpg" alt=""> -->
               <br>
@@ -276,7 +276,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="panel" sstyle="background: url(src/krog-mos.jpg);">
+            <div class="panel" sstyle="background: url(src/gru6.gif) no-repeat; background-size: cover">
               <!-- panel content -->
               <!-- <img class="panel-img" src="src/krog-mos.jpg" alt=""> -->
               <br>
@@ -305,26 +305,51 @@
           </div>
         </div>
       </div>
-      <div class="modal hide" id="myModal1">
-        <div class="modal-header">
-          <h3 class="col">Ежедневные рейсы Днепродзержинск - Москва / Москва - Днепродзержинск</h3>
+      <div class="modal hide center" id="myModal1">
+        <div class="modal-header" style="border-radius: 6px 6px 0 0;">
+          <h4 class="col">Оставьте нам Ваш нормер телефона и мы Вам перезвоним</h4>
         </div>
         <div class="modal-body">
-
+          <form action="https://formspree.io/themaulmartin@gmail.com" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="Имя" placeholder="Ваше имя" id="name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="Номер телефона" placeholder="Номер телефона" id="extra_phone_number" />
+            </div>
+            <div class="form-group">
+              <input type="email" hidden class="form-control" name="Обратный адрес" value="dont@reply.me" placeholder="Электронная почта" id="reply_to" />
+            </div>
+            <div class="form-group">
+              <textarea name="Сообщение" class="form-control" placeholder="Сообщение" rows="2"></textarea>
+            </div>
+            <input id="submit_form" class="btn btn-default" type="submit" value="Отправить" />
+          </form>
+          <script>
+          var submitButton = document.getElementById("submit_form");
+          var form = document.getElementById("email_form");
+          form.addEventListener("submit", function (e) {
+            setTimeout(function () {
+              submitButton.value = "Sending...";
+              submitButton.disabled = true;
+            }, 1);
+          });
+          </script>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer" style="border-radius: 0 0 6px 6px;">
           <a href="#" class="btn r_btn dismiss_btn" data-dismiss="modal">Закрыть</a>
         </div>
       </div>​
     </div>
   </div>
 </section>
-
-
-<section id="sec-prem" name="sec-features" class="sec-features">
-  <div class="green-panel" style="padding-top: 15px; padding-bottom: 15px;">
-    <br><br>
+<section id="sec-price" name="sec-features" class="sec-features">
+  <div class="green-panel" style="padding-top: 15px; padding-bottom: 15px; background: url(src/v1.gif);">
+    <br>
     <div class="row justify-content-center">
+      <h2>Наши преимущества</h2>
+    </div>
+    <div class="row justify-content-center" style="margin-top: 40px;margin-bottom: 60px;">
       <div class="col ml-5 text-left">
         <img class="prem-img" src="src/cach.png" alt=""><br><br>
         <b>Качество<br></b>
@@ -356,84 +381,18 @@
     </div>
   </div>
 </section>
-<!--SEC PREM
--
--
--
-<h3 class="text-center">НАШИ ПРЕИМУЩЕСТВА</h3>
-<div class="text-left text about-us green">
-<p>В нашей кампании работают самые квалифицированные сотрудники.</p>
-<p>Мы предлагаем услуги грузчиков в Харькове по доступным ценам.</p>
-<p>С удовольствием возьмем на себя решение всех вопросов во время квартирного, офисного или промышленного переезда.</p>
-<p>Выполним любые грузоперевозки.</p>
-<p>Главным направлением деятельности кампании Профи Груз это организация всех видов перевозок в Харькове.</p>
-<p>Наша кампания предоставляет следующие услуги:</p>
-<p>Квартирный переезд</p>
-<p>Офисный переезд</p>
-<p>Промышленный переезд</p>
-<p>Переезд банков</p>
-<p>Услуги грузчиков, в том числе разгрузка фур</p>
-<p>Вывоз строй мусора</p>
-<p>Перевозка хрупких грузов</p>
-<p>Перевозка больших габаритных грузов</p>
-<p>Перевозка сейфов и банкоматов</p>
-<p>В случае если вам нужно упаковать вещи, то следует обратиться к нам заранее.</p>
-<p>Так как потребуются упаковочные материалы (скотч, пленка, картонные коробки, и др.)</p>
-<p>Профессионально упакуем любые вещи. Наша компания располагает современными машинами и ответственными сотрудниками с опытом работы.</p>
-<p>Наш большой автопарк позволит предоставить каждому клиенту необходимую машину.</p>
-<p>А также услуги грузчиков для перевозки тяжелых габаритных грузов и предметов мебели.</p>
-</div>
--
--
---->
-<!-- <div class="text-center" style="padding-top: 25px">
-<p><b>Гарантия качества</b></p>
-</div>
-<br>
-<div class="row justify-content-center" style="margin-top: 25px;margin-bottom: 25px;">
-
-<div class="col text-center">
-<p>
-<img src="./src/kach1.png" alt="Кондиционер" height="75px">
-</p>
-<p>
-<h5>100%</h5>
-</p>
-</div>
-<div class="col text-center">
-<p>
-<img src="./src/kach2.jpg" alt="Обогрев салона" height="75px">
-</p>
-<p>
-<h5>100%</h5>
-</p>
-</div>
-<div class="col text-center">
-<p>
-<img src="./src/kach3.jpg" alt="Большой багажник" height="75px">
-</p>
-<p style="text-center">
-<h5>Большой<br>палец</h5>
-</p>
-</div>
-</div>
-</div>
-<div class="text-center" style="padding-bottom: 25px">
-<h1>! Быстро ! Качественно ! Ответственно ! Дружелюбно !</h1>
-</div> -->
-
-
-</section>
-
-<section id="sec-price" name="sec-about" class="sec-about "><!--pt-5 pb-5-->
+<section id="sec-prc" name="sec-about" class="sec-about "><!--pt-5 pb-5-->
   <h2 class="text-center">Стоимость Услуг</h2>
   <br><br>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="text-center"><b>Грузчики разнорабочие</b></div>
+      <div class="text-center"><h5><b>Грузчики разнорабочие</b></h5></div>
     </div>
     <br>
     <div class="row">
+      <div class="col-1">
+
+      </div>
       <div class="col">
         Услуги	<br>
         Грузчик (по-часово)<br>
@@ -446,6 +405,9 @@
         Авто<br>
         Грузовое авто (по-часово)<br>
         Грузовое авто (км)<br>
+      </div>
+      <div class="col-1">
+
       </div>
       <div class="col">
         Cтоимость<br>
@@ -463,16 +425,22 @@
     </div>
     <br><br>
     <div class="row justify-content-center">
-      <div class="text-center"><b>Земельные работы</b></div>
+      <div class="text-center"><h5><b>Земельные работы</b></h5></div>
     </div>
     <br>
     <div class="row">
+      <div class="col-1">
+
+      </div>
       <div class="col">
         Устройство бетонного фундамента(опалубка,армирование,бетонирование)<br>
         Устройство опалубки<br>
         Копка котлованов, траншей и т.д.(от 4х куб.)<br>
         Устройство отмосток(армирование,опалубка,бетонирование)<br>
         Перекопка земли<br>
+      </div>
+      <div class="col-1">
+
       </div>
       <div class="col">
         м.куб. 450 грн.<br>
@@ -494,15 +462,17 @@
       <div class="col">
         <div class="row">
           <div class="col-8">
-            <h2>Наши вакансии</h2>
-            <br><br><br>
+            <h2>Наши вакансии:</h2>
+            <br>
             <h5>
-            Нам нужны грузчики и разнорабочие. Чтобы          <br>
-            начать работать просто заполните анкету –         <br>
-            мы найдем работу рядом с вашим домом.             <br>
-                                                              <br>
-            Хотите узнать подробнее об условиях               <br>
-            работы? Позвоните нам:                            <br>
+            <!-- <h5 class="contact-info">
+            Нам нужны: -->
+            <p class="contact-info">-грузчики;</p>
+            <p class="contact-info">-разнорабочие.</p>
+            <br> Чтобы начать работать просто заполните анкету –
+            мы найдем работу рядом с вашим домом.<br>
+            Хотите узнать подробнее об условиях
+            работы?
           </h5>
           </div>
           <div class="col">
