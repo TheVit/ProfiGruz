@@ -321,6 +321,10 @@ img
 {
   color: white !important;
   background-color: #00376C !important;
+  border-top: 2px solid #002242;
+  padding-top: 45px;
+  border-bottom: 2px solid #002242;
+  padding-bottom: 45px;
 }
 
 .ajg-logo
@@ -407,6 +411,15 @@ p
 .map
 {
   padding-bottom: 35px;
+  width: 100%;
+  border: 2px solid #002242;
+}
+
+.panel-blue
+{
+  background: #005eb9;
+  padding: 15px;
+  border-radius: 6px;
 }
 
 .white
@@ -495,4 +508,10 @@ div>a:hover
 {
   height: 45px;
   /*width: 100px;*/
+}
+
+.contact-header
+{
+  line-height: 1.5;
+  text-align: center;
 }
