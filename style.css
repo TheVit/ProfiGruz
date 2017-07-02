@@ -314,6 +314,7 @@ img
   background-color: #93CAFF !important;
   color: black !important;
   border: none;
+  padding: 5px;
 }
 
 .dismiss_btn:hover
@@ -535,7 +536,11 @@ div>a:hover
   border-radius: 0 6px 6px 0;
 }
 
-.jumbo-panel
+.jumbo-panel *
 {
-
+  background: rgba(0, 94, 185, .7);
+  border-radius: 6px;
+  width: 620px;
+  font-size: 59px;
+  padding: 15px;
 }

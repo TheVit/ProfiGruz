@@ -30,6 +30,9 @@
     }
   }
   </script>
+  <script type="text/javascript">
+  $("body").on("contextmenu", false);
+  </script>
 </head>
 
 <body>
@@ -92,7 +95,7 @@
             </h1>
             <br>
             <div class="jumbo-panel">
-
+              <h2>Грузчики от 50 грн!</h2>
             </div>
           </div>
           <div class="col-3 justify-content-left">
@@ -472,15 +475,15 @@
             <h2>Наши вакансии:</h2>
             <br>
             <h5>
-            <!-- <h5 class="contact-info">
-            Нам нужны: -->
-            <p class="contact-info">-грузчики;</p>
-            <p class="contact-info">-разнорабочие.</p>
-            <br> Чтобы начать работать просто заполните анкету –
-            мы найдем работу рядом с вашим домом.<br>
-            Хотите узнать подробнее об условиях
-            работы?
-          </h5>
+              <!-- <h5 class="contact-info">
+              Нам нужны: -->
+              <p class="contact-info">-грузчики;</p>
+              <p class="contact-info">-разнорабочие.</p>
+              <br> Чтобы начать работать просто заполните анкету –
+              мы найдем работу рядом с вашим домом.<br>
+              Хотите узнать подробнее об условиях
+              работы?
+            </h5>
           </div>
           <div class="col">
 
@@ -529,22 +532,22 @@
 
 <section>
   <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 49.9883667, lng: 36.2439578};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyjM1bZc6cKWnAtdC5XlFhDducpL12_0&callback=initMap">
-    </script>
+  <script>
+  function initMap() {
+    var uluru = {lat: 49.9883667, lng: 36.2439578};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyjM1bZc6cKWnAtdC5XlFhDducpL12_0&callback=initMap">
+  </script>
 </section>
 
 
