@@ -96,13 +96,13 @@
                 Заказ грузчиков в Харькове
               </h3>
               <br>
-              <p>- Перевозщка мебели</p>
+              <p>- Перевозка мебели</p>
               <p>- Вывоз строймусора</p>
-              <p>- Подьемматериалов</p>
+              <p>- Подьем стройматериалов</p>
               <br><br>
 
               <a data-toggle="modal" href="#myModal1">
-                <div class="panel-button text-center btn btn-primary btn-lg">
+                <div class="panel-button text-center btn-lg" style="margin: auto">
                   <h4>Заказать</h4>
                 </div>
               </a>
@@ -261,7 +261,7 @@
                 </div>
                 <div class="col">
                   <h5>
-                    от 70 грн/час
+                    от 50 грн/час
                   </h5>
                 </div>
               </div>
@@ -486,7 +486,7 @@
         <br>
         <h4 class="contact-header">Оставьте свою заявку и мы Вам перезвоним</h4>
         <br><br>
-        <form action="https://formspree.io/themaulmartin@gmail.com" method="POST">
+        <form action="https://formspree.io/profigryz@gmail.com" method="POST">
           <div class="form-group">
             <input type="text" class="form-control" name="Имя" placeholder="Ваше имя" id="name" />
           </div>
@@ -523,7 +523,23 @@
 </section>
 
 <section>
-  <img class="map" src="src\map.PNG" alt="Map">
+  <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 49.9883667, lng: 36.2439578};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAyjM1bZc6cKWnAtdC5XlFhDducpL12_0&callback=initMap">
+    </script>
 </section>
 
 
@@ -545,7 +561,7 @@
         +38(093)321-05-43<br>
       </div>
       <div class="col-2 text-white mx-3 my-5">
-        igroman1003@gmail.com
+        profigryz@gmail.com
       </div>
     </div>
 

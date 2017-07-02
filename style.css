@@ -1,4 +1,9 @@
 /* !important - зло */
+#map
+{
+  height: 400px;
+  width: 100%;
+}
 
 html{
   font-family: Helvetica;
@@ -108,8 +113,8 @@ header
 
 .btn-lg
 {
-  background: #00376C !important;
-  color: white;
+  background: #93CAFF !important;
+  color: black !important;
   border: none;
 }
 
