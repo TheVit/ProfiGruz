@@ -113,6 +113,7 @@ header
 
 .btn-lg
 {
+  margin: 0 !important;
   background: #93CAFF !important;
   color: black !important;
   border: none;
@@ -120,6 +121,7 @@ header
 
 .btn-lg:hover
 {
+  margin: 0;
   background: #6c3500 !important;
   color: #93CAFF;
   border: none;
