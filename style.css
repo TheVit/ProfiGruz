@@ -449,7 +449,7 @@ p
   margin: 0;
   margin-bottom: 25px;
   width: 320px;
-  height: 300px;
+  height: 500px;
   background: #005eb9 0px;
 }
 
@@ -457,10 +457,10 @@ p
 {
   margin-bottom: 5px;
   background: #005eb9;
-  width: 250px;
-  height: 165px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 320px;
+  height: 225px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .panel-button
