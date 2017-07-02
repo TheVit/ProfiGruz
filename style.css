@@ -5,9 +5,8 @@
   width: 100%;
 }
 
-html{
-  font-family: Helvetica;
-  font: Helvetica;
+html *{
+  font-family: 'Roboto Slab', serif;
 }
 
 hr
@@ -534,4 +533,9 @@ div>a:hover
   margin-right: auto;
   width: 360px;
   border-radius: 0 6px 6px 0;
+}
+
+.jumbo-panel
+{
+
 }
