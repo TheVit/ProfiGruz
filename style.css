@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 html *{
   font-family: 'Roboto Slab', serif;
 }
@@ -30,7 +35,8 @@ hr
 .green-panel
 {
   color: white;
-  background: #00376C !important;
+  background: url(src/wood.jpg);
+  /*#00376C !important;*/
 }
 
 .r_btn:hover
@@ -328,7 +334,7 @@ img
 .sec-about
 {
   color: white !important;
-  background-color: #00376C !important;
+  background-color: #002242 !important;
   border-top: 2px solid #002242;
   padding-top: 45px;
   border-bottom: 2px solid #002242;
@@ -515,6 +521,7 @@ div>a:hover
 .prem-img
 {
   height: 70px;
+  padding-left: 65px;
 }
 
 .contact-header

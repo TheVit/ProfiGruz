@@ -43,7 +43,7 @@
       <header>
         <div class="container">
           <nav class="navbar navbar-light navbar-toggleable-sm text-white" id="nav">
-            <a href="#nav"></a><img src="./src/pg-logo.png" style="height: 55px; padding: 3px; font-family: 'Zilla Slab', serif;">
+            <a href="#nav"></a><img src="./src/pg-logo.png" style="width: 55px; height: 55px; padding: 3px; font-family: 'Zilla Slab', serif;">
             <p style="font-family: 'Zilla Slab', serif;">ProfiGryz</p>
             <div class="col-1">
 
@@ -116,7 +116,7 @@
             <p>- Подьем стройматериалов</p>
             <br><br>
             <div class="row justify-content-center">
-              <div class="col justify-content-center" style="text-align: center">
+              <div class="col justify-content-center" style="text-align: center;padding-left: 35px;">
                 <a data-toggle="modal" href="#myModal1">
                   <div class="panel-button text-center btn-lg">
                     <h4>Заказать</h4>
@@ -167,9 +167,9 @@
               </h5>
             </div>
           </div>
-          <br><br>
+          <br>
           <div class="row panel-price text-left mx-1 px-2">
-            Для складов, строек, гипермаркетов и других объектов
+            Для складов, строек, гипермаркетов, магазинов, заводов, фарик и других объектов
           </div>
           <br>
           <a data-toggle="modal" href="#myModal1">
@@ -186,7 +186,7 @@
           <br>
           <div class="row text-center text-white">
 
-            <div class="col">
+            <div class="col pr-0 text-right">
               <h5>Разнорабочие</h5>
             </div>
             <div class="col">
@@ -195,9 +195,9 @@
               </h5>
             </div>
           </div>
-          <br><br>
+          <br>
           <div class="row panel-price text-left mx-1 px-2">
-            Упаковщики, фасовщики и другие подсобные рабочие
+            Упаковщики, фасовщики и другие подсобные рабочие с большой областью охвата специализаций
           </div>
           <br>
           <a data-toggle="modal" href="#myModal1">
@@ -214,7 +214,7 @@
           <br>
           <div class="row text-center text-white">
 
-            <div class="col pl-2">
+            <div class="col pl-3">
               <h5>Подсобные рабочие</h5>
             </div>
             <div class="col">
@@ -255,9 +255,8 @@
               </h5>
             </div>
           </div>
-          <br>
           <div class="row panel-price text-left mx-1 px-2">
-            Копка траншей, ям, котлованов и бассейнов
+            Копка траншей, ям, котлованов, бассейнов, клумб, фундаментов и прочих земляных работ
           </div>
           <br>
           <a data-toggle="modal" href="#myModal1">
@@ -283,11 +282,13 @@
               </h5>
             </div>
           </div>
-          <br><br>
+          <br>
           <div class="row panel-price text-left mx-1 px-2">
-            Офисные и квартирные переезды
+            Офисные переезды, <br>
+            квартирные переезды, <br>
+            погрузка мебели
           </div>
-          <br><br>
+          <br>
           <a data-toggle="modal" href="#myModal1">
             <div class="panel-button text-center">
               <h4>Заказать</h4>
@@ -311,8 +312,10 @@
               </h5>
             </div>
           </div>
+
+          <br>
           <div class="row panel-price text-left mx-1 px-2">
-            Демонтаж стен, перегородок, стяжки, плитки, штукатурки, линолеума, паркетной доски и краски
+            Демонтаж стен, перегородок, стяжки, плитки, штукатурки, линолеума и паркетной доски
           </div>
           <br>
           <a data-toggle="modal" href="#myModal1">
@@ -362,7 +365,7 @@
   </div>​
 </section>
 <section id="sec-price" name="sec-features" class="sec-features">
-  <div class="green-panel" style="padding-top: 15px; padding-bottom: 15px; background: url(src/v1.gif);">
+  <div class="green-panel" style="padding-top: 15px; padding-bottom: 15px;">
     <br>
     <div class="row justify-content-center">
       <h2>Наши преимущества</h2>
@@ -522,7 +525,8 @@
     var uluru = {lat: 49.9883667, lng: 36.2439578};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
-      center: uluru
+      center: uluru,
+      scrollwheel:  false
     });
     var marker = new google.maps.Marker({
       position: uluru,
