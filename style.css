@@ -59,6 +59,7 @@ header
 
 .wrapper
 {
+  max-width: 100%;
   background: white;
   color: black !important;
 }
@@ -409,7 +410,7 @@ p
 .services
 {
   width: 300px;
-  margin: 25px;
+  margin: 0 25px 25px 25px;
   padding: 35px 35px 35px 35px;
   background: rgba(0, 94, 185, 0.6) 0px;
   border-radius: 5px 5px;
